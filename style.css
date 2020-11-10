@@ -9,10 +9,18 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="tel"],
-textarea,
-select {
+textarea {
   width: 100%;
-  padding: 0;
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+  background-color: #F2F4F6;
+  height: 5vh;
+}
+
+select {
+width: 100%;
+  padding: 0px;
   border: 1px;
   border-radius: 5px;
   background-color: #F2F4F6;
@@ -66,6 +74,10 @@ h3 {
     font-family: 'Nunito';
 }
 
+.main {
+    padding: 10px;
+}
+
 .main p {
     padding-bottom: 20px;
     text-align: center;
@@ -95,6 +107,7 @@ h3 {
 
 #zipcode {
     margin-bottom: 30px;
+    width: 55%;
 }
 
 /* ---- Navigation ---- */
@@ -128,7 +141,13 @@ h3 {
     color: #1B3E4A;
 }
 
-i.far {
+[class$="far fa-id-card"] {
+    font-size: 30px;
+    margin: 10px;
+    color: #357C93;
+}
+
+[class$="far fa-envelope"] {
     font-size: 30px;
     padding-right: 10px;
     color: #357C93;
@@ -174,6 +193,21 @@ footer {
 
     #zipcode {
         margin-bottom: 30px;
+    }
+
+    [class$="far fa-id-card"] {
+        font-size: 30px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+        color: #357C93;
+    }
+    
+    [class$="far fa-envelope"] {
+        font-size: 30px;
+        padding-right: 10px;
+        margin: 0;
+        color: #357C93;
     }
 
 }
