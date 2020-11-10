@@ -1,0 +1,179 @@
+/* ---- Base Styles ---- */
+
+body {
+    line-height: 1.6;
+    background-color: #dae4ea;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 0;
+  border: 1px;
+  border-radius: 5px;
+  background-color: #F2F4F6;
+  height: 5vh;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-size: 1.12rem;
+    font-family: 'Nunito';
+    display: flex;
+}
+
+
+input, textarea{
+    transition: background-color 0.5s;
+}
+input:focus {
+    background-color:#F6EEEA;
+}
+
+textarea:focus {
+    background-color: #F6EEEA;
+}
+
+::placeholder {
+    color: #BECAD3;
+    text-align: end;
+    padding-right: 10px;
+}
+
+p {
+    margin: 0;
+    font-family: 'Nunito';
+}
+
+label {     
+    font-family: 'Nunito';
+}
+
+h2,
+h3 {
+    margin: 0;
+    font-family: 'Nunito';
+}
+
+.main p {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 60vw;
+    border-top: 2px dashed;
+    margin: auto;
+    position: relative;
+}
+.container:before{
+    content:"";
+    width: 100%;
+    border-top: 2px solid;
+
+    position: absolute;
+    margin-top: 5px;
+}
+.input-group {
+    line-height: 2.5;
+}
+
+#newsletter {
+    line-height: 2;
+}
+
+#zipcode {
+    margin-bottom: 30px;
+}
+
+/* ---- Navigation ---- */
+
+.headline,
+.signup {
+    font-size: 1.17em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-family: 'Nunito';
+}
+
+.headline {
+    background-color: #357C93;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+#contact {
+    border-bottom: 2px dashed;
+    width: 60vw;
+    margin-top: 10px;
+
+}
+
+.signup {
+    padding-top: 15px;
+    color: #1B3E4A;
+}
+
+i.far {
+    font-size: 30px;
+    padding-right: 10px;
+    color: #357C93;
+}
+
+#submit {
+    background-color: #357C93;
+    color: white;
+    padding: 5px;
+    border-radius: 10%;
+    font-family: 'Nunito';
+    cursor:pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+footer {
+    text-align: center;
+    color: #1B3E4A;
+    font-style: italic;
+    margin: 15px;
+}
+
+
+/* ---- Media Queries ---- */
+
+@media (min-width: 768px){
+
+    .input-group {
+        display: flex;
+        line-height: 2.5;
+        padding: 10px;
+    }
+
+    label {
+        width: 32.5%;
+    }
+
+    #zipcode {
+        margin-bottom: 30px;
+    }
+
+}

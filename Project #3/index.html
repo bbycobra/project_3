@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="main">
+        <div class="headline">The Code Review</div>
+        <div class="signup">Signup for our newsletter</div>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </header>
+
+    <div class="container">
+
+        <form action="index.html" method="POST">
+
+            <fieldset id="contact">
+                
+                <legend><i class="far fa-id-card"></i>Contact Information</legend>
+                <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user_name" placeholder="Required" required>
+                </div>
+
+                <div class="input-group">
+                <label for="email">Email Address </label>
+                <input type="email" id="email" name="user_email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone">
+                </div>
+
+                <div class="input-group">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user_address" placeholder="123 Avenue" required>
+                </div>
+
+                <div class="input-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city">
+                </div>
+
+                <div class="input-group">
+                <label for="state">State</label>
+                <select id="state" name="user_state">
+                    <option value="" disabled selected>Choose State</option>
+                    <option value="alabama">Alabama</option>
+                    <option value="california">California</option>
+                    <option value="delaware">Delaware</option>
+                    <option value="florida">Florida</option>
+                    <option value="new york">New York</option>
+                    <option value="texas">Texas</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                <label for="zipcode">Zip Code</label>
+                <input type="text" id="zipcode" name="user_zipcode" placeholder="11234" required>
+                </div>
+                
+            </fieldset>
+
+            <fieldset id="newsletter">
+                <legend><i class="far fa-envelope"></i>Newsletter</legend>
+                <p>Select the newsletter you would like to receive:</p>
+                <input type="checkbox" id="checkbox-html" name="checkbox" value="html">
+                <label for="checkbox-html">HTML News</label><br>
+
+                <input type="checkbox" id="checkbox-css" name="checkbox" value="css">
+                <label for="checkbox-css">CSS News</label><br>
+
+                <input type="checkbox" id="checkbox-javascript" name="checkbox" value="javascript">
+                <label for="checkbox-javascript">Javascript News</label><br>
+                <br>
+                <p>Newsletter format</p>
+                <input type="radio" id ="radio-html" name="radio" value="htmln">
+                <label for="radio-html">HTML</label><br>
+                <input type="radio" id="radio-plain" name="radio" value="plain">
+                <label for="radio-plain">Plain Text</label> <br>
+                <br>
+                <p>Other topics you'd like to hear about:</p>
+                <textarea id="bio" name="user_bio"></textarea><br>
+                <label for="bio"></label>
+            </fieldset>
+
+            <div class="button">
+            <input type="submit" id="submit" name="submit" value="Sign Up">
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer>Copyright The Code Review</footer>
+
+
+</body>
+
+</html>
